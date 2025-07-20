@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.content {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+}
+.dice {
+    font-size: 120px;
+}
+
+button {
+    background-color: rgb(32, 150, 196);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    font-size: 24px;
+    font-weight: 900;
+    border-radius: 0.5rem;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    /* border: 2px solid #4fd; */
+    width: 100%;
+    margin-top: 1rem;
+
+}
+.listChild {
+    background-color: rgba(236, 236, 236, 0.687);
+    box-shadow: 2px 2px 5px rgba(125, 125, 125, 0.55);
+    width: 70%;
+    display: flex;
+    padding: 0rem 2rem 0rem 2rem;
+    justify-content: center;
+    gap: 40%;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.historyDice{
+    font-size: 56px;
+
+}
+
+.rollCount {
+    font-size: 32px;
+}
+
+.roll-animation {
+  animation-name: rollAnime;
+}
+
+@keyframes rollAnime {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateY(720deg) rotateX(720deg);
+  }
+}
